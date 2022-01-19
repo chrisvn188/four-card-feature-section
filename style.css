@@ -33,11 +33,18 @@ body{
   max-width: 21em;
 }
 
+@media (min-width:700px) {
+  .container{
+    max-width: 40em;
+  }
+}
+
 @media (min-width:1140px) {
   .container{
     max-width: 66em;
   }
 }
+
 
 .text-content{
   text-align: center;
@@ -51,7 +58,7 @@ body{
 
 @media (min-width:1140px) {
   .heading > span {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -64,7 +71,7 @@ body{
   color: var(--color-grayish-blue);
 }
 
-@media (min-width:1140px) {
+@media (min-width:700px) {
   .paragraph{
     max-width: 35em;
     margin: 0 auto;
@@ -77,6 +84,13 @@ body{
   display: grid;
   grid-template-columns: 1fr;
   grid-gap:1.8em ;
+}
+
+@media (min-width:700px) {
+  .cards-container{
+    grid-template-columns: repeat(2,1fr);
+    grid-row: auto auto;
+  }
 }
 
 @media (min-width:1140px) {
